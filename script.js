@@ -2,7 +2,7 @@
 const STORY = {
   intro: {
     scene: "intro",
-    speaker: "Earn",
+    speaker: "Ern",
     button: "Next",
     lines: [
       "วันนี้เอินมีอะไรอยากบอกเอิง...",
@@ -12,7 +12,7 @@ const STORY = {
   },
   found: {
     scene: "found",
-    speaker: "Earn",
+    speaker: "Ern",
     button: "Next",
     lines: [
       "เจอแล้ว...",
@@ -22,14 +22,14 @@ const STORY = {
   },
   confession: {
     scene: "confession",
-    speaker: "Earn",
+    speaker: "Ern",
     lines: [
       "ให้เอินเป็นคนโปรดของเอิงไปนานๆ ได้ไหม?"
     ]
   },
   yesEnding: {
     scene: "ending",
-    speaker: "Earn",
+    speaker: "Ern",
     lines: [
       "เย้~ เอินดีใจที่สุดเลย 💖",
       "จากนี้ไป ขออยู่ข้างเอิงไปนานๆ นะ"
@@ -98,7 +98,7 @@ function showChapter(chapterKey) {
   if (chapterKey === "intro") {
     girl.classList.add("hidden");
     boy.classList.add("running");
-    nextButton.textContent = "Help Earn find Eung";
+    nextButton.textContent = "Help Ern find Erng";
   }
 
   if (chapterKey === "found" || chapterKey === "confession" || chapterKey === "yesEnding") {

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earn & Eung - Tiny Love Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loading-screen" id="loadingScreen">
+    <div class="pixel-heart"></div>
+    <p>Loading love...</p>
+  </div>
+
+  <main class="game" id="game" data-scene="intro">
+    <div class="sky-layer" aria-hidden="true">
+      <span class="cloud cloud-one"></span>
+      <span class="cloud cloud-two"></span>
+      <span class="sunset-dot dot-one"></span>
+      <span class="sunset-dot dot-two"></span>
+      <span class="sunset-dot dot-three"></span>
+    </div>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+      <span aria-hidden="true">♪</span>
+      <span>Music</span>
+    </button>
+
+    <section class="stage" aria-label="Earn and Eung romantic pixel game">
+      <div class="scene-bg scene-intro" id="introBg" aria-hidden="true"></div>
+      <div class="scene-bg scene-cafe" id="cafeBg" aria-hidden="true"></div>
+
+      <div class="lanterns" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+      <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+      <div class="table-glow" aria-hidden="true"></div>
+
+      <div class="character boy running" id="boy" role="img" aria-label="Earn"></div>
+      <div class="character girl hidden" id="girl" role="img" aria-label="Eung"></div>
+
+    </section>
+
+    <section class="dialogue-panel" aria-live="polite">
+      <div class="speaker-row">
+        <span class="speaker" id="speakerName">Earn</span>
+        <span class="tiny-hearts" aria-hidden="true">♡ ♡ ♡</span>
+      </div>
+      <p class="dialogue-text" id="dialogueText"></p>
+      <div class="choice-row hidden" id="choiceRow">
+        <button class="choice yes" id="yesButton" type="button">ได้สิ 💖</button>
+        <button class="choice no" id="noButton" type="button">ไม่เอา</button>
+      </div>
+      <button class="next-button" id="nextButton" type="button">Help Earn find Eung</button>
+    </section>
+
+    <div class="final-card hidden" id="finalCard" role="status">
+      <p>Our little love story starts here.</p>
+      <button id="replayButton" type="button">Replay the moment</button>
+    </div>
+  </main>
+
+  <footer>Made with love</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
